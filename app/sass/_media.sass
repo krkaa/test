@@ -1,0 +1,51 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+	.s-test
+		.h1
+			font-size: 28px
+		.select-brands
+			ul
+				font-size: 16px
+				li
+					padding: 5px 10px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.s-test
+		.h1
+			font-size: 24px
+		.select-brands
+			ul
+				font-size: 16px
+				li
+					display: block
+					margin-top: 10px
+		.product-item
+			p
+				font-size: 14px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

@@ -1,0 +1,121 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	&.ishome
+		background-color: $white
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+a
+   	&.item-name, &.all-items
+	   	border-bottom: 1px dotted #333333
+	    color: #333333
+	    &:hover
+	    	color: #4085F4
+	    	border-bottom: 1px dotted #4085F4
+	    	text-decoration: none
+
+b, strong
+	font-weight: bold
+
+h1
+	font-family: $exo20-font
+
+h2, h3, h4, h5
+	font-family: $default-font
+
+.s-test
+	.h1
+		margin-top: 30px
+		font-weight: 600
+		font-size: 34px
+	.select-brands
+		ul
+			list-style-type: none
+			font-size: 18px
+			padding: 0
+			li
+				display: inline-block
+				padding: 10px 20px
+				margin: 5px 3px
+				background-color: #F6F3E8
+
+				img
+					max-width: 100%
+					height: auto
+					&.img-width
+						width: 100%
+					&.second
+						display: none
+
+				&.active
+					background-color: $green
+					img.second
+						display: inline-block
+					img.first
+						display: none
+
+	.product-item
+		line-height: 1.2
+		margin-bottom: 40px
+		.img-product
+			margin-bottom: 15px
+			width: 100%
+			height: auto
+		.h5
+			margin-bottom: 3px
+			font-weight: 600
+		.item-name
+			font-size: 28px
+			font-weight: 600
+			text-transform: uppercase
+			line-height: 1
+			span
+				text-transform: lowercase
+				font-size: 16px
+		p
+			font-weight: bold
+		.brand-item
+			display: inline-block
+			padding: 5px 10px
+			margin: 10px 0
+			background-color: $green
+			img
+				width: 72px
+				height: auto
+
+	
+
+
+@import "media" // Always at the end
